@@ -663,7 +663,7 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-8 rounded-lg">
+         <div className="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800 p-8 rounded-lg">
             <h4 className="font-bold text-xl mb-4 text-center">📣 Pitch do Projeto</h4>
             <blockquote className="text-lg italic text-center leading-relaxed">
               "Depois de 25 anos construindo história, é hora de garantir que todos que chegam até aqui saibam onde estão pisando e para onde estamos indo juntos. A Imersão DBA360 une nosso <span className="font-bold text-blue-400">legado</span> à nossa <span className="font-bold text-green-400">ambição de crescimento</span> com clareza, integração real e atitude desde o primeiro dia."
