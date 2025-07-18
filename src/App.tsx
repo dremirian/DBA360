@@ -709,7 +709,7 @@ const App: React.FC = () => {
     setGameAnswers({});
     setGameCompleted(false);
   };
-
+  
   const handleAnswer = (scenarioId: number, choiceId: string) => {
     setGameAnswers(prev => ({ ...prev, [scenarioId]: choiceId }));
     
@@ -719,8 +719,9 @@ const App: React.FC = () => {
       } else {
         setGameCompleted(true);
       }
-    }, 7000);
+    }, 2000);
   };
+
 
   const calculateScore = () => {
     let totalScore = 0;
@@ -1707,19 +1708,19 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-12">
-          <div className="flex items-center justify-center mb-6">
+          <div className="flex items-center justify-center mb-6 bg-gradient-to-r from-teal-300 via-cyan-500 to-blue-700 text-white p-6 rounded-lg shadow-lg">
             <img 
               //src="https://monitores.dbaonline.com.br:3000/public/img/grafana_icon.svg" 
               src={logo} 
               alt="DBA360 Logo" 
-              className="w-16 h-16 mr-4"
+              className="w-20 h-20 mr-6"
             />
-            <div>
+           <div>
               <h1 className="text-4xl font-bold text-gray-800">DBA360</h1>
               <p className="text-xl text-gray-600">Plataforma de Onboarding</p>
             </div>
           </div>
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-lg shadow-lg">
+          <div>
             <h2 className="text-2xl font-bold mb-2">IMERSÃO DBA360 – Conectando Legado e Futuro</h2>
             <p className="text-lg opacity-90">Uma jornada de integração gamificada em 5 missões temáticas</p>
           </div>
@@ -1762,14 +1763,17 @@ const App: React.FC = () => {
     
         </div>
 
-        <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-8 rounded-lg shadow-lg">
+        <div className="bg-gradient-to-l from-blue-700 via-cyan-500 to-teal-300 text-gray-800 p-8 rounded-lg shadow-lg">
           <h3 className="text-2xl font-bold mb-4 text-center">📣 Academia De Líderes 2025</h3>
-        <blockquote className="text-lg italic text-center leading-relaxed">
+       {/* <blockquote className="text-lg italic text-center leading-relaxed">
   A Imersão DBA360 une nosso <span className="font-bold text-blue-400">legado</span> à nossa <span className="font-bold text-green-400">ambição de crescimento</span>. Com clareza, integração real e atitude desde o primeiro dia.
   <br />
    <br />
   Andressa Mirian | Gabriela Anselmo | Nary Dorta
-</blockquote>
+</blockquote>*/}
+  <div className="text-center text-lg font-medium">
+  Andressa Mirian | Gabriela Anselmo | Nary Dorta
+</div>
         </div>
       </div>
     </div>
